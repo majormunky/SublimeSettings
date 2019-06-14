@@ -1,0 +1,32 @@
+<snippet>
+	<content><![CDATA[
+import pygame
+from Engine.Config import get_screenrect
+
+
+class GameScene:
+	def __init__(self, game):
+		self.game = game
+		self.screenrect = get_screenrect()
+
+	def update(self, dt):
+		pass
+
+	def draw(self, canvas):
+		pygame.draw.rect(canvas, (0, 200, 0), (40, 40, 40, 40))
+
+	def handle_event(self, event):
+		pass
+
+	def activate(self, data):
+		pass
+
+	def deactivate(self):
+		pass
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pygame_scene</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.python</scope>
+</snippet>
